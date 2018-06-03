@@ -1,0 +1,81 @@
+body{
+	background-image: url("../pics/backgroundPic.jpeg");
+	background-size: cover;
+	font-family: Averia Libre;
+	margin-top: 0;
+}
+
+h1{
+	background: rgba(0, 0, 0, 0.75);
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	background: rgba(237, 166, 0, 0.75);
+	line-height: 40px;
+}
+
+li:nth-child(2n){
+	background: rgba(160, 3, 3, 0.75);
+	color: #FFEFD5;
+}
+
+input{
+	font-size: 24px;
+	width: 100%;
+	padding: 10px 10px 10px 20px;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0);
+}
+
+input:focus{
+	background: white;
+	outline:none;
+	border: 2px solid rgb(160, 3, 3);
+}
+
+span{
+	background: rgba(7, 76, 3,0.75);
+	height: 40px;
+	margin-right: 20px;
+	color: white;
+	width: 0;
+	/*inline-block is for the filling*/
+	display: inline-block;
+	text-align: center;
+	transition-duration: 0.5s linear;
+	/*opacity is very important to fade away the icons*/
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+.fa-plus-circle{
+	float:right;
+}
+
+#todoContainer{
+	background: rgba(160, 3, 3, 0.75);
+	margin: 50px auto;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	width: 400px;
+}
+
+.completed{
+	color: gray;
+	text-decoration: line-through;
+}
